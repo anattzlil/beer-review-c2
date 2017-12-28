@@ -30,14 +30,14 @@ $('.sort-beer').on('click', function(){
             return a.rating - b.rating;
         });
         renderBeers();
-        $('.sort-beer').html('reverse');
+        $('.sort-beer').html('Reverse List');
         clicked = true;
     } else {
         beers.sort(function(a, b) { 
             return b.rating - a.rating;
         });
         renderBeers();
-        $('.sort-beer').html('sort');
+        $('.sort-beer').html('Sort List');
         clicked = false;
     }
     
